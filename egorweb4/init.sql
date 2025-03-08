@@ -1,0 +1,16 @@
+CREATE TABLE APP_USERS(
+    "Id" Serial Primary Key,
+    "username" VARCHAR,
+    "password" VARCHAR,
+    "role" VARCHAR
+);
+
+CREATE TABLE records (
+    id SERIAL PRIMARY KEY,
+    x DOUBLE PRECISION NOT NULL,
+    y DOUBLE PRECISION NOT NULL,
+    r DOUBLE PRECISION NOT NULL,
+    in_area BOOLEAN NOT NULL,
+    start_time TIMESTAMP WITH TIME ZONE NOT NULL,
+    processed_time DOUBLE PRECISION NOT NULL
+);
